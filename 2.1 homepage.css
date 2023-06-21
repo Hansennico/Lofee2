@@ -1,0 +1,812 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #D0C4A2;
+    
+}
+
+@font-face {
+    font-family: 'Tokyo Dreams';
+    src: url(Fonts/TokyoDreamsHybrid-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Granada';
+    src: url(Fonts/Granada-Serial\ Regular.ttf);
+}
+
+
+
+nav{
+    font-family: 'Forum';
+    color: #6C2E13;
+    background: #F6E8BE;;
+    height: 60px;
+    width: 100%;
+    top: 72px;
+}
+
+.logo img{
+    position: absolute;
+    width: 100px;
+    left: 22px;
+    top: 18px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+  
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #6C2E13;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    top: 72px;
+}
+a.active,a:hover{
+    color: #2161A9;
+    text-decoration-line: underline;
+    transition: .5s;
+}
+
+.rectangle1{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+
+    position: absolute;
+    background-color:#497DC8;;
+    z-index: -1;
+}
+
+.container{
+    width: 38%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 56%;
+    left: 27%;
+    overflow: hidden;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #2161A9;
+    overflow: hidden;
+  }
+  .section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: "assets/wave.png";
+    background-size: 1000px 100px;
+  }
+  
+  section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  
+  section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  
+  section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+  }
+  
+  section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  
+  @keyframes animate {
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: 100px;
+    }
+  }
+  
+  @keyframes animate2 {
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x:-100px;
+  }
+}
+  
+.bigtext{
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 18%;
+
+    font-family: 'Tokyo Dreams';
+    font-style: normal;
+    font-size: 75px;
+
+    color: #F6E8BE;
+}
+
+
+
+.uselaundry{
+    position: absolute;
+    font-family: 'Granada';
+    font-style: normal;
+
+    font-size: 30px;
+
+    left: 60%;
+    top: 440px;
+}
+
+.uselaundry:hover{
+    text-decoration: underline;
+    color: #D0C4A2;
+    transition: .5s;
+}
+
+.marquee-w {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 66px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 45px;
+    width: 100%;
+    background-color: #D0C4A2;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: 'Forum';
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    font-size: 36px;
+    animation: marquee 10s linear infinite;
+    color: black;
+    text-align: center;
+}
+.marquee2 span {
+    animation-delay: 5s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.rectangle2{
+    width: 100%;
+    height: 120%;
+    left: 0px;
+    top: 686px;
+    position: absolute;
+    background: #967258;
+    z-index: -1;
+}
+
+.container2{
+    width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 165%;
+    left: 75%;
+    overflow: hidden;
+}
+.wrapper2{
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+
+.coffeetxt{
+    position: absolute;
+    width: 531px;
+    height: 300px;
+    left: 40px;
+    top: 750px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 121px;
+    
+    color: #DBC0AB;
+}
+
+.rectangle3{
+    background: #D0C4A2;
+    height: 130%;
+    width: 100%;
+    top: 1320px;
+    position: absolute;
+}
+.bev{
+    position: absolute;
+    width: 305px;
+    height: 71px;
+    left: 47px;
+    top: 1350px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 71px;
+    color: #6C2E13;
+}
+.favs{
+    position: absolute;
+    width: 40px;
+    height: 53px;
+    top: 1450px;
+    left: 47px;
+    z-index: 1;
+}
+.rectangle4{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 43px;
+    top: 1440px;
+
+    background: #F2EBD8;
+    border-radius: 31px;
+}
+
+.rec{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 92px;
+    top: 1455px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+.hotf{
+    position: absolute;
+    width: 40px;
+    height: 53px;
+    top: 1450px;
+    left: 365px;
+    z-index: 1;
+}
+
+.rectangle5{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 350px;
+    top: 1440px;
+    background: #F2EBD8;
+    border-radius: 31px;
+}
+.hot{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 430px;
+    top: 1455px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+
+
+.rectangle6{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 657px;
+    top: 1440px;
+    background: #F2EBD8;
+    border-radius: 31px;
+}
+
+.rectangle7{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 964px;
+    top: 1440px;
+    background: #F2EBD8;
+    border-radius: 31px; 
+}
+
+.coldf{
+    position: absolute;
+    width: 27px;
+    height: 44px;
+    left: 680px;
+    top: 1450px;
+    
+}
+.cold{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 737px;
+    top: 1455px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+.tea{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 1044px;
+    top: 1455px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+
+.hotf2{   
+    position: absolute;
+    width: 40px;
+    height: 53px;
+    top: 1450px;
+    left: 979px;
+    z-index: 1;
+
+}
+
+.rectangle8{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 43px;
+    top: 1670px;
+    background: #F2EBD8;
+    border-radius: 31px;
+}
+
+.rectangle9{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 350px;
+    top: 1670px;
+    background: #F2EBD8;
+    border-radius: 31px;
+}
+
+.rectangle10{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 657px;
+    top: 1670px;
+    background: #F2EBD8;
+    border-radius: 31px;
+}
+
+.rectangle11{
+    position: absolute;
+    width: 276px;
+    height: 67px;
+    left: 964px;
+    top: 1670px;
+    background: #F2EBD8;
+    border-radius: 31px; 
+}
+
+.foods{
+    position: absolute;
+    width: 359px;
+    height: 71px;
+    left: 42px;
+    top: 1580px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 71px;
+    color: #6C2E13;
+}
+
+.rec2{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 92px;
+    top: 1685px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+
+.sandwiches{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 430px;
+    top: 1685px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+
+.dessert{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 737px;
+    top: 1685px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+.other{
+    position: absolute;
+    width: 219px;
+    height: 38px;
+    left: 1044px;
+    top: 1685px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #6C2E13;
+}
+
+.recf{
+    position: absolute;
+    top: 1680px;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    left: 47px;
+}
+
+.sandwichf{
+    position: absolute;
+    top: 1680px;
+    z-index: 1;
+    width: 47px;
+    height: 45px;
+    left: 365px;
+}
+.dessertf{
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    left: 680px;
+    top: 1680px;
+    z-index: 1;
+}
+
+.rectangle12{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    top: 1959px;
+    
+    background: #F6E8BE;
+}
+.logobtm{
+    position: absolute;
+    width: 313px;
+    left: 32px;
+    top: 1983px;
+}
+
+.copyright{
+    position: absolute;
+    width: 494px;
+
+    left: 45px;
+    top: 2100px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: rgba(167, 81, 43, 0.86);
+}
+.line1{
+    position: absolute;
+    width: 0px;
+    height: 160px;
+    left: 587px;
+    top: 1984px;
+
+    border: 4px solid #6C2E13;
+}
+.company{
+    position: absolute;
+    width: 273px;
+    height: 77px;
+    left: 644px;
+    top: 1950px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 77px;
+    
+    color: #6C2E13;
+}
+
+.aboutus{
+    position: absolute;
+    width: 148px;
+    height: 44px;
+    left: 651px;
+    top: 2021px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.careers{
+    position: absolute;
+    width: 126px;
+    height: 44px;
+    left: 648px;
+    top: 2041px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-decoration-line: underline; 
+    color: rgba(167, 81, 43, 0.86);   
+}
+.faq{
+    position: absolute;
+    width: 89px;
+    height: 20px;
+    left: 651px;
+    top: 2061px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.policy{
+    position: absolute;
+    width: 91px;
+    height: 20px;
+    left: 651px;
+    top: 2081px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.instagram{
+    position: absolute;
+    width: 160px;
+    height: 44px;
+    left: 981px;
+    top: 2021px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+.whatsapp{
+    position: absolute;
+    width: 165px;
+    height: 44px;
+    left: 981px;
+    top: 2041px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.contact{
+    position: absolute;
+    width: 165px;
+    height: 44px;
+    left: 981px;
+    top: 2061px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.twitter{
+    position: absolute;
+    left: 981px;
+    top: 2081px;
+    width: 165px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    
+    color: rgba(167, 81, 43, 0.86);
+}
+
+
+.link-btn{
+    color: #6C2E13;
+}
+
+.link-btn:hover{
+    color: brown;
+}

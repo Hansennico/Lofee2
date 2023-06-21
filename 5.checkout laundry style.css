@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #2161A9;
+}
+nav{
+    font-family: 'Forum';
+    color: #6C2E13;
+    background: #F6E8BE;;
+    height: 60px;
+    width: 100%;
+    top: 72px;
+}
+
+.logo img{
+    position: absolute;
+    width: 100px;
+    left: 22px;
+    top: 18px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+  
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #6C2E13;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    top: 72px;
+}
+a.active,a:hover{
+    color: #2161A9;
+    text-decoration-line: underline;
+    transition: .5s;
+}
+  
+  @font-face {
+    font-family: 'Granada';
+    src: url(Fonts/Granada-Serial\ Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Afterglow';
+    src: url(Fonts/Afterglow-Regular.ttf);
+  }
+  .buttonslaund{
+    position:absolute;
+    width: 1087px;
+    height: 35px;
+    left: 104px;
+    top: 17%;
+  }
+  
+  .square1 {
+    position: absolute;
+    width: 1087px;
+    left: 104px;
+    height: 200%;
+    top: 35%;
+    background-color: #F6E8BE;
+    z-index: -1;
+  }
+  
+  .square2{
+    width: 100%;
+    height: 250%;
+    left: 0px;
+    top: 10%;
+    position: absolute;
+    background-color:#497DC8;
+    z-index: -2;
+  }
+.checkouttxt{
+    position: absolute;
+    font-family: 'Afterglow';
+    font-size: 75px;
+    color: #497DC8;
+    left: 39%;
+    top: 40%;
+}
+.tulisanbuttons{
+    position: absolute;
+    width: 234px;
+    height: 54px;
+    left: 35px;
+    top: 160px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #F6E8BE;
+  }
+  
+  .inputwriting{
+    position: absolute;
+    left: 60px;
+
+  }
+  .payment{
+    position: absolute;
+    left: 390px;
+        text-decoration-line: underline;
+  }
+  .process{
+    position: absolute;
+    left: 760px;
+  
+  }
+  .finished{
+    position: absolute;
+    left: 1098px;
+  
+  }
+  .dot{
+    position: absolute;
+    font-family: 'Granada';
+    font-size: 100px;
+    color: #497DC8;
+    left: 18%;
+    top: 46%;
+  }
+
+  .total{
+    position: absolute;
+    font-family: 'Granada';
+    font-size: 60px;
+    color: #497DC8;
+    left: 28%;
+    top: 169%;
+  }
+  .amount{
+    position: absolute;
+    font-family: 'Granada';
+    font-size: 35px;
+    color: #497DC8;
+    left: 20%;
+    top: 80%;
+  }
+
+.amounti{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 35px;
+  color: #497DC8;
+  left: 20%;
+  top: 90%;
+}
+.hargaw{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 35px;
+  color: #497DC8;
+  left: 70%;
+  top: 80%;
+}
+
+.hargai{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 35px;
+  color: #497DC8;
+  left: 70%;
+  top: 90%;
+}
+
+.tax{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 35px;
+  color: #497DC8;
+  left: 20%;
+  top: 110%;
+}
+
+.rptax{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 35px;
+  color: #497DC8;
+  left: 70%;
+  top: 110%;
+}
+.dot2{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 100px;
+  color: #497DC8;
+  left: 18%;
+  top: 120%;
+}
+.plus{
+  position: absolute;
+  font-family: 'Granada';
+  font-size: 65px;
+  color: #497DC8;
+  left: 80%;
+  top: 122%;
+}
+
+.group{
+  top: -30%;
+}
+
+.paymentbtn{
+  background-color: #2161A9; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

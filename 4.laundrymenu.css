@@ -1,0 +1,355 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@font-face {
+  font-family: 'Granada';
+  src: url(Fonts/Granada-Serial\ Regular.ttf);
+}
+@font-face {
+  font-family: 'Afterglow';
+  src: url(Fonts/Afterglow-Regular.ttf);
+}
+
+nav{
+  font-family: 'Forum';
+  color: #6C2E13;
+  background: #F6E8BE;
+  height: 60px;
+  width: 100%;
+  top: 64px;
+}
+
+.logo img{
+  position: absolute;
+  width: 100px;
+  left: 22px;
+  top: 18px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #6C2E13;
+  font-size: 18px;
+  padding: 7px 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  top: 72px;
+}
+a.active,a:hover{
+  color: #2161A9;
+  text-decoration-line: underline;
+  transition: .5s;
+}
+
+.buttonslaund{
+  position:absolute;
+  width: 1087px;
+  height: 35px;
+  left: 104px;
+  top: 17%;
+}
+
+.square1 {
+  position: absolute;
+  width: 1087px;
+  left: 104px;
+  height: 350%;
+  top: 35%;
+  background-color: #F6E8BE;
+  z-index: -1;
+}
+
+.square2{
+  width: 100%;
+  height: 400%;
+  left: 0px;
+  top: 10%;
+  position: absolute;
+  background-color:#497DC8;
+  z-index: -2;
+}
+
+.tulisanbuttons{
+  position: absolute;
+  width: 234px;
+  height: 54px;
+  left: 35px;
+  top: 160px;
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #F6E8BE;
+}
+
+.inputwriting{
+  position: absolute;
+  left: 60px;
+  text-decoration-line: underline;
+}
+.payment{
+  position: absolute;
+  left: 390px;
+}
+.process{
+  position: absolute;
+  left: 760px;
+
+}
+.finished{
+  position: absolute;
+  left: 1098px;
+
+}
+
+.txtorder{
+  position: absolute;
+  font-size: 35px;
+  font-family: 'Afterglow';
+  font-size: 75px;
+  color: #497DC8;
+  left: 22%;
+  top: 40%;
+}
+
+.form{
+  font-family: 'Granada';
+  color: #497DC8;
+  left: 80%;
+  top: 9%;
+}
+
+.formweight{
+
+  left: 50%;
+}
+
+.questions{
+  font-size: 35px;
+  left: 22%;
+  font-family: 'Granada';
+}
+
+.weight{
+  position: absolute;
+  font-size: 35px;
+  align-items: center;
+  font-family: 'Granada';
+  left: 29%;
+  top: 65%;
+  color: #2161A9;
+
+}
+
+.fabricchoice{
+  position: absolute;
+  font-size: 35px;
+  align-items: center;
+  font-family: 'Granada';
+  left: 23%;
+  top: 145%;
+  color: #2161A9;
+}
+.soapchoice{
+  position: absolute;
+  font-size: 35px;
+  align-items: center;
+  font-family: 'Granada';
+  left: 33%;
+  top: 195%;
+  color: #2161A9;
+}
+
+.tempchoice{
+  position: absolute;
+  font-size: 35px;
+  align-items: center;
+  font-family: 'Granada';
+  left: 20%;
+  top: 260%;
+  color: #2161A9;
+}
+
+.ironchoice{
+  position: absolute;
+  font-size: 35px;
+  align-items: center;
+  font-family: 'Granada';
+  left: 33%;
+  top: 310%;
+  color: #2161A9;
+}
+
+
+
+.radio-section{
+  display: flexbox;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 80%;
+  height: 100vh;
+  padding-top: 70vh;
+  padding-left: 500px;
+}
+.radio-item [type="radio"]{
+  display: none;
+}
+
+.radio-item + .radio-item{
+  margin-top: 15px;
+}
+.radio-item label{
+  display: block;
+  padding: 20px 55px;
+  border:2px solid #2161A9;
+  border-radius: 70px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  width: 330px;
+  white-space: nowrap;
+  position: relative;
+}
+.radio-item label:after,
+.radio-item label:before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.radio-item label:after{
+  height: 20px;
+  width: 20px;
+  border:2px solid #2161A9;
+  left: 20px;
+  top: calc(50% - 12px);
+}
+.radio-item label:before{
+  background: #2161A9;
+  height: 10px;
+  width: 10px;
+  left: 27px;
+  top: calc(50% - 5px);
+  transform: scale(5);
+  transition: .4s ease-in-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+.radio-item [type="radio"]:checked ~ label{
+  border-color: #2161A9;
+}
+
+.radio-item [type="radio"]:checked ~ label:before{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-container {
+  position: relative;
+  height: 7rem;
+  width: 7rem;
+  margin: 0.5rem;
+}
+
+.input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  transition: all 300ms ease;
+  padding-top: 340px;
+}
+
+.input-container ion-icon {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.input-container label {
+  color: var(--primary-color);
+  font-size: 0.80rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input:checked+.radio-tile {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 12px var(--primary-color);
+  transform: scale(1.1);
+}
+
+input:hover+.radio-tile {
+  box-shadow: 0 0 12px var(--primary-color);
+}
+
+input:checked+.radio-tile ion-icon,
+input:checked+.radio-tile label {
+  color: #2161A9;
+}
+
+.fabricimg img{
+  width: 82.01px;
+  height: 77px;
+}
+
+.temph svg{
+  width: 82.01px;
+  height: 77px;
+}
+
+button{
+  position: absolute;
+  right: 140px;
+  width: 70px;
+  height: 30px;
+  color: #A7512B;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #b09d7f;
+  top: 310%;
+  left: 590px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loffee</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/cafe.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="./2. Homepage.html"><img src="./asset/loffee.png"></a></label>
+        <ul>
+            <li><a href="3.laundrymenu.html">Laundry</a></li>
+            <li><a href="" class="active" >Cafe</a></li>
+            <li><a href="">Member</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="">Location</a></li>
+        </ul>
+    </nav>
+
+    <div class="whole-page">
+        <div class="header-text">
+            <h3 id="htxt1">Input Cafe Order</h3>
+            <h3 id="htxt2">Payment</h3>
+            <h3 id="htxt3">Delivery</h3>
+        </div>
+    
+        <div class="progress">
+            <div class="progress-bar"></div>
+            <div class="progress-btn2">
+                <div class="progress-btn" id="btn1"><button onclick="hide(sidebar); hide(htxt2); hide(htxt3); show(htxt1); show(foodtxt); show(categorytxt); show(Products); hide(payment)">Order</button></div>
+                <div class="progress-btn" id="btn2"><button onclick="show(sidebar); show(htxt2); hide(htxt3); hide(htxt1); hide(foodtxt); hide(categorytxt); hide(Products); show(payment)">Payment</button></div>
+                <div class="progress-btn" id="btn3"><button onclick="show(htxt3); hide(htxt1); hide(htxt2); hide(foodtxt); hide(sidebar); hide(categorytxt); hide(Products); hide(payment)">History</button></div>
+            </div>
+        </div>
+    
+        <div class="container2">
+            <div id="sidebar">
+                <div class="head">My Cart <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div></div>
+                <div class="cart"></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">Rp. 0,-</h2>
+                </div>
+                <div class="custom-select" style="width:200px;" id="payment">
+                    <select>
+                    <option value="0">Select Your Payment Method:</option>
+                    <option value="1">GO-PAY</option>
+                    <option value="2">OVO</option>
+                    <option value="3">Shoope Pay</option>
+                    <option value="4">BCA</option>
+                    <option value="5">Flazz</option>
+                    </select>
+                    <button>check out</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="food-menu"><a href="./food.html" id="foodtxt">switch to food menu</a></div>
+        <div class="category" id="categorytxt">
+            <ul>
+                <button class="category-btn" onclick="show(Recomended); hide(HotDrinks); hide(ColdDrinks); hide(TeaDrinks)"><li>Recomended</li></button>
+                <button class="category-btn" onclick="show(HotDrinks); hide(Recomended); hide(ColdDrinks); hide(TeaDrinks)"><li>Cold Drink</li></button>
+                <button class="category-btn" onclick="hide(Recomended); hide(HotDrinks); show(ColdDrinks); hide(TeaDrinks)"><li>Hot Drink</li></button>
+                <button class="category-btn" onclick="hide(Recomended); hide(HotDrinks); hide(ColdDrinks); show(TeaDrinks)"><li>Tea Drink</li></button>
+            </ul>
+        </div>
+        
+        <div id="Products">
+            <!-- recomend loaded here -->
+            <!-- ... -->
+        </div>
+    </div>
+
+    <script src="./js/cafe.js"></script>
+    <script src="./js/data.js"></script>  
+</body>
+</html>

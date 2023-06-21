@@ -1,0 +1,83 @@
+html{
+  background-color: rgb(28, 28, 28);
+}
+
+.whole-page{
+  background-color: #e1d5b0;
+  margin: 60px;
+  margin-bottom: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+  
+  @font-face {
+    font-family: 'Granada';
+    src: url(Fonts/Granada-Serial\ Regular.ttf);
+  }
+  
+  nav{
+    position: fixed;
+    font-family: 'Forum';
+    color: #6C2E13;
+    background: #F6E8BE;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+  }
+  
+  .logo img{
+    position: absolute;
+    width: 100px;
+    left: 22px;
+    top: 18px;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #6C2E13;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    top: 72px;
+  }
+  a.active,a:hover{
+    color: #2161A9;
+    text-decoration-line: underline;
+    transition: .5s;
+  }
+  
+  .inputwriting{
+    position: absolute;
+    left: 60px;
+    text-decoration-line: underline;
+  }
+  .payment{
+    position: absolute;
+    left: 390px;
+  }
+  .process{
+    position: absolute;
+    left: 760px;
+  
+  }
+  .finished{
+    position: absolute;
+    left: 1098px;
+  
+  }

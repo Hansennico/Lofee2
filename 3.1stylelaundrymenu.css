@@ -1,0 +1,765 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #D0C4A2;
+    
+}
+
+
+nav{
+    font-family: 'Forum';
+    color: #6C2E13;
+    background: #F6E8BE;;
+    height: 60px;
+    width: 100%;
+    top: 64px;
+}
+
+.logo img{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 22px;
+    top: 18px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+  
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #6C2E13;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    top: 72px;
+}
+a.active,a:hover{
+    color: #13676C;
+    text-decoration-line: underline;
+    transition: .5s;
+}
+
+
+
+.rectangle1{
+    background: #D0C4A2;
+    height: 300%;
+    width: 100%;
+    z-index: -1;
+    top: 10%;
+    position: absolute;
+}
+
+.titlelaund{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+
+    color: #17767C;
+}
+
+.buttonslaund{
+    position: absolute;
+    width: 1087px;
+    height: 35px;
+    left: 104px;
+    top: 190px;
+}
+
+.inputwriting{
+    position: absolute;
+    width: 234px;
+    height: 54px;
+    left: 75px;
+    top: 230px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    
+    color: #17767C;
+}
+.payment{
+    position: absolute;
+    left: 430px;
+    top: 230px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    
+    color: #819D9E;
+}
+.process{
+    position: absolute;
+    left: 780px;
+    top: 230px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    
+    color: #819D9E;
+}
+.finished{
+    position: absolute;
+    left: 1098px;
+    top: 230px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    
+    color: #819D9E;
+}
+
+.rectangle2{
+    position: absolute;
+    width: 100%;
+    height: 29%;
+    top: 48%;
+    
+    background: #F6E8BE;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.weighttitle{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 71px;
+    /* identical to box height */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #0A2F31;
+}
+
+.dropdownsquare {
+    position: absolute;
+width: 1020px;
+height: 50px;
+left: 122px;
+top: 380px;
+
+background: rgba(255, 253, 249, 0.64);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 73px;
+}
+
+.select-menu{
+    width: 380px;
+    margin: 140px auto;
+}
+.select-menu .select-btn{
+    display: flex;
+    position: absolute;
+    width: 1020px;
+    height: 50px;
+    left: 122px;
+    top: 380px;
+
+    background: rgba(255, 253, 249, 0.64);
+    border-radius: 73px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 35px;
+    color: #0A2F31;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: absolute;
+    width: 1020px;
+    height: 50px;
+    left: 122px;
+    top: 380px;
+
+    background: rgba(255, 253, 249, 0.64);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 73px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: rgba(255, 253, 249, 0.64);
+}
+.options .option:hover{
+    background: #13676C;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #0A2F31;
+}
+
+.rectangle3{
+    position: absolute;
+    width: 100%;
+    height: 29%;
+    top: 77.5%;
+        
+    background: #F6E8BE;
+    border-radius: 50px;
+     z-index: -1;
+}
+
+.soap img{
+    position: absolute;
+    width: 500px;
+    height: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 527px;
+    z-index: -1;
+}
+
+.soaptxt{
+    font-family: 'Forum';
+    size: 20px;
+}
+
+.tide{
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    color: #0A2F31;
+}
+.all{
+    position: absolute;
+    top: 100%;
+    left: 49%;
+    color: #0A2F31;
+}
+.ariel{
+    position: absolute;
+    top: 100%;
+    left: 63%;
+    color: #0A2F31;
+}
+
+.soaptitle{
+    position: absolute;
+    top: 76%;
+    text-align: center;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 71px;
+    /* identical to box height */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    color: #0A2F31;
+}
+
+.rectangle4{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    top: 107%;
+        
+    background: #F6E8BE;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.temph{
+    position: absolute;
+    width: 82.01px;
+    height: 77px;
+    left: 33%;
+    top: 125%;
+
+}
+.temph2{
+    position: absolute;
+    width: 82.01px;
+    height: 77px;
+    left: 60%;
+    top: 125%;
+}
+
+.warm{
+    top: 143%;
+    position: absolute;
+    left: 62%;
+    color: #0A2F31;
+    size: 21px;
+    font-family: 'Roboto';
+    color: #D97A57;
+    font-weight: 500;
+}
+
+.cold{
+    top: 143%;
+    position: absolute;
+    left: 35%;
+    color: #0A2F31;
+    size: 25px;
+    font-family: 'Roboto';
+    color: #13676C;
+    font-weight: 500;
+}
+
+.texttemp{
+    position: absolute;
+    top: 109%;
+    text-align: center;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 71px;
+    /* identical to box height */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #0A2F31;
+}
+
+.irontxt{
+    position: absolute;
+    top: 157%;
+    text-align: center;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 26px;
+
+    height: 8px;
+    /* identical to box height */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #0A2F31;
+}
+
+.ironing{
+    position: absolute;
+    width: 63px;
+    height: 66px;
+    left: 33%;
+    top: 170%;
+}
+
+.noironing{
+    position: absolute;
+    width: 34px;
+    height: 54px;
+    left: 63%;
+    top: 170%;
+}
+
+.rectangle5{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 152.5%;
+        
+    background: #F6E8BE;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.yes{
+    top: 183%;
+    position: absolute;
+    left: 34%;
+    color: #0A2F31;
+    font-size: 32px;
+    font-family: 'Roboto';
+    color: #13676C;
+}
+
+.no{
+    top: 183%;
+    position: absolute;
+    left: 63%;
+    color: #0A2F31;
+    font-size: 36px;
+    font-family: 'Roboto';
+    color: #13676C;
+
+}
+
+.submitbutton{
+    position: absolute;
+    width: 60%;
+    height: 80px;
+    left: 20%;
+    top: 270%;
+
+    background: #0A2F31;
+    border-radius: 69px;
+}
+
+.submit{
+    position: absolute;
+    font-family: 'PT Serif';
+    font-style: normal;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 270%;
+    font-size: 64px;
+
+}
+
+.disclaimer{
+    position: absolute;
+    top: 191%;
+    text-align: center;
+    font-family: 'Forum';
+    font-style: normal;
+    font-size: 24px;
+    /* identical to box height */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #0A2F31;
+}
+
+.rectangle6{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 201%;
+        
+    background: #F6E8BE;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.fabrictxt{
+    position: absolute;
+    top: 207%;
+    text-align: center;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 26px;
+
+    height: 8px;
+    /* identical to box height */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #0A2F31;
+}
+
+.fabrics img{
+    position: absolute;
+    width: 82.01px;
+    height: 77px;
+    top: 220%;
+    flex-wrap: nowrap;
+}
+
+.normal img{
+    position: absolute;
+
+    left: 175px;
+}
+
+.heavy img{
+    position: absolute;
+    left: 466px;
+}
+
+.cotton img{
+    position: absolute;
+    left: 757px;
+}
+
+.delicates img{
+    position: absolute;
+    left: 1048px;
+}
+
+.normaltxt{
+    position: absolute;
+    top: 237%;
+    left: 175px;
+    font-size: 32px;
+    color: #0A2F31;
+}
+.heavytxt{
+    position: absolute;
+    top: 237%;
+    left: 466px;
+    font-size: 32px;
+    color: #0A2F31;
+}
+.cottontxt{
+    position: absolute;
+    top: 237%;
+    left: 757px;
+    font-size: 32px;
+    color: #0A2F31;
+}
+.delicatestxt{
+    position: absolute;
+    top: 237%;
+    left: 1048px;
+    font-size: 32px;
+    color: #0A2F31;
+}
+
+
+
+
+
+
+.rectangle12{
+    position: absolute;
+    width: 100%;
+    height: 366px;
+    left: 0px;
+    top: 1959px;
+    
+    background: #F6E8BE;
+}
+
+.logobtm img{
+    position: absolute;
+    width: 513px;
+    height: 172px;
+    left: 32px;
+    top: 1983px;
+}
+
+.copyright{
+    position: absolute;
+    width: 494px;
+    height: 80px;
+    left: 45px;
+    top: 2160px;
+
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: rgba(167, 81, 43, 0.86);
+}
+.line1{
+    position: absolute;
+    width: 0px;
+    height: 314px;
+    left: 587px;
+    top: 1984px;
+
+    border: 4px solid #6C2E13;
+}
+
+.company{
+    position: absolute;
+    width: 273px;
+    height: 77px;
+    left: 644px;
+    top: 1977px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 77px;
+    
+    color: #6C2E13;
+}
+.connect{
+    position: absolute;
+    width: 240px;
+    height: 77px;
+    left: 981px;
+    top: 1977px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 77px;
+    
+    color: #6C2E13;
+}
+.aboutus{
+    position: absolute;
+    width: 148px;
+    height: 44px;
+    left: 651px;
+    top: 2071px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.careers{
+    position: absolute;
+    width: 126px;
+    height: 44px;
+    left: 648px;
+    top: 2124px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-decoration-line: underline; 
+    color: rgba(167, 81, 43, 0.86);   
+}
+.faq{
+    position: absolute;
+    width: 89px;
+    height: 44px;
+    left: 651px;
+    top: 2180px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.policy{
+    position: absolute;
+    width: 91px;
+    height: 44px;
+    left: 651px;
+    top: 2233px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.instagram{
+    position: absolute;
+    width: 160px;
+    height: 44px;
+    left: 981px;
+    top: 2069px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+.whatsapp{
+    position: absolute;
+    width: 165px;
+    height: 44px;
+    left: 981px;
+    top: 2124px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.contact{
+    position: absolute;
+    width: 126px;
+    height: 44px;
+    left: 981px;
+    top: 2179px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    
+    color: rgba(167, 81, 43, 0.86);
+}
+
+.twitter{
+    position: absolute;
+    width: 111px;
+    height: 50px;
+    left: 981px;
+    top: 2233px;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: right;
+    text-decoration-line: underline;
+    
+    color: rgba(167, 81, 43, 0.86);
+}

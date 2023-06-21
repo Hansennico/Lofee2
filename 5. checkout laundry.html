@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="5.checkout laundry style.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="2. Homepage.html"><img src="assets/loffee.png" alt="" srcset=""></a></label>
+        <ul>
+            <li> <a class = "active"href="3.laundrymenu.html">Laundry</a></li>
+            <li><a href="./cafe.html">Cafe</a></li>
+            <li><a class="" href="">Member</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="">Location</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="square2"></div>
+
+    <div class="buttonslaund">
+        <svg width="1087" height="35" viewBox="0 0 1087 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="424" y="17" width="424" height="5" fill="#819D9E"/>
+            <rect x="23" y="16" width="357" height="6" fill="#F6E8BE"/>
+            <rect x="380" y="17" width="695" height="5" fill="#84A1C5"/>
+            <circle cx="367" cy="19" r="16" fill="#F6E8BE"/>
+            <circle cx="15.5" cy="15.5" r="15.5" fill="#F6E8BE"/>
+            <circle cx="728" cy="19" r="16" fill="#84A1C5"/>
+            <circle cx="1071.5" cy="19.5" r="15.5" fill="#84A1C5"/>
+            </svg>
+                                                    
+    </div>
+    <div class="tulisanbuttons">
+        <div class="inputwriting">Order</div>
+        <div class="payment">Checkout</div>
+        <div class="process">Payment</div>
+        <div class="finished">Process</div>    
+    </div>
+
+    <div class="square1"></div>
+    <div class="checkouttxt">Checkout</div>
+    <div class="dot">.......................................</div>
+    <div class="group">
+    <div class="amount"><p>1 x <span id="question1"></span></p></div>
+    <div class="hargaw">Rp.<span id="weightprice">0,-</span></div>
+    <div class="amounti"><p>1 x Ironing <span id="question2"></span></div></p>
+    <div class="hargai">Rp.<span id="ironingprice">0,-</span></div>
+    <class class="tax"><p>Tax (Purchase Tax)</p></class>
+    <div class="rptax">Rp. 1.000,-</div>
+    <div class="dot2">.......................................</div>
+    <div class="plus">+</div>
+    </div>
+    <div class="total">Total Price: Rp. <span id="totalPrice"></span>0,-</div>
+
+
+    <div class="paymentbtn"><button></button></div>
+    <script src="4.laundrymenu.js"></script>
+    <script>
+        var question1 = sessionStorage.getItem("question1");
+        var question2 = sessionStorage.getItem("question2");
+        var price = parseFloat(sessionStorage.getItem("price"));
+
+        document.getElementById("question1").innerText = question1;
+        document.getElementById("question2").innerText = question2;
+        document.getElementById("totalPrice").innerText = price.toFixed(2);
+    </script>
+</body>
+</html>
